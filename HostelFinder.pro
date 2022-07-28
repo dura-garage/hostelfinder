@@ -9,8 +9,8 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    DbManager.cpp \
     Sources/models/hostel.cpp \
+    dao/dbconnection.cpp \
     mainwindow.cpp\
     models/Hostel\
     models/HostelOwner \
@@ -23,8 +23,8 @@ SOURCES += \
     services/hostelservice.cpp
 
 HEADERS += \
-    DbManager.h \
     Sources/models/hostel.h \
+    dao/dbconnection.h \
     mainwindow.h \
     models/Hostel\
     models/HostelOwner \
