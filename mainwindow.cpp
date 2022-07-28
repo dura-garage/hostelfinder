@@ -19,5 +19,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_clicked()
 {
   DbConnection d("test.db");
+  QMessageBox::information(this,"Database Connection","Success");
+
 }
 

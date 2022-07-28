@@ -39,4 +39,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    .gitignore
+    .gitignore \
+    docs/Hostel_FinderProject_Proposal.docx \
+    docs/Hostel_FinderProject_Proposal.pdf
