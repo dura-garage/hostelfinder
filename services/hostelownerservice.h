@@ -3,21 +3,17 @@
 
 #include <string>
 #include<vector>
+#ifndef HOSTELSERVICE_H
+#define HOSTELSERVICE_H
 
-#include "hostelowner.h"
 
-using namespace std;
-
-class HostelOwnerRepository
+class HostelOwnerService
 {
-
 public:
-HostelOwnerRepository();
-
-//memeber functions
-vector<HostelOwner> getAllHostelOwners();
-HostelOwner getHostelOwner(string email, string password);
+    HostelOwnerService();
 };
 
-#endif
+#endif // HOSTELSERVICE_H
+
+
 #endif // HOSTELOWNERSERVICE_H

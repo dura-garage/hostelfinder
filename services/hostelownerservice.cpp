@@ -1,4 +1,4 @@
-#include "hostelownerservice.h"
+#include "services/hostelownerservice.h"
 
 HostelOwnerService::HostelOwnerService()
 {
