@@ -1,7 +1,9 @@
-#include"DbManager.h"
+#include "dao/dbconnection.h"
 #include<QDebug>
 #include<QSqlDatabase>
-    DbManager::DbManager(const QString& path)
+#include<QSqlQuery>
+
+    DbConnection::DbConnection(const QString& path)
     {
        m_db = QSqlDatabase::addDatabase("QSQLITE");
        m_db.setDatabaseName(path);
@@ -16,11 +18,11 @@
        }
 }
 
-    bool DbManager::addPerson(const QString& name)
+    bool DbConnection::addPerson(const QString& name)
     {
        bool success = false;
        // you should check if args are ok first...
-       QSqlQuery query();
+       QSqlQuery query;
        query.prepare("INSERT INTO people (name) VALUES (:name)");
        query.bindValue(":name", name);
        if(query.exec())
@@ -29,8 +31,8 @@
        }
        else
        {
-            qDebug() << "addPerson error:"
-                     << query.lastError();
+            qDebug() << "addPerson error:";
        }
 
        return success;
+}
