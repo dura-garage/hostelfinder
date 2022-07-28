@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include <QSqlDatabase>
-#include "DbManager.h"
+#include "dao/dbconnection.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -18,6 +18,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-  DbManager d("test.db");
+  DbConnection d("test.db");
 }
 
