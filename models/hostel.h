@@ -29,7 +29,7 @@ public:
 
 Hostel();
 Hostel(string name,string location,Category category, int totalBeds, float monthlyFee, bool vegFoodAvailable);
-Hostel(Hostel & h);
+//Hostel(Hostel & h);
 
 /*
 *  Getters for the variables
