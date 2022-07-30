@@ -12,10 +12,10 @@ Hostel::Hostel(string name,string location,Category category, int totalBeds, flo
     this->monthlyFee=monthlyFee;
     this->vegFoodAvailable=vegFoodAvailable;
 }
-Hostel::Hostel(Hostel & h){
-    // If a copy constructor is needed
-    // Implement this as per the need
-}
+//Hostel::Hostel(Hostel & h){
+//    // If a copy constructor is needed
+//    // Implement this as per the need
+//}
 string Hostel::getName(){
     return this->name;
 }

@@ -25,6 +25,7 @@ Status addHostel(Hostel hostel);
 
 
 //some member functions to get data
+Hostel getHostelById(int id);
 vector<Hostel> getAllHostels();
 vector<Hostel> getBoysHostel();
 vector<Hostel> getGirlsHostel();
