@@ -18,21 +18,3 @@
        }
 }
 
-    bool DbConnection::addPerson(const QString& name)
-    {
-       bool success = false;
-       // you should check if args are ok first...
-       QSqlQuery query;
-       query.prepare("INSERT INTO people (name) VALUES (:name)");
-       query.bindValue(":name", name);
-       if(query.exec())
-       {
-           success = true;
-       }
-       else
-       {
-            qDebug() << "addPerson error:";
-       }
-
-       return success;
-}

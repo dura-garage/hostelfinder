@@ -40,5 +40,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 DISTFILES += \
     .gitignore \
+    database/db.sqlite3 \
     docs/Hostel_FinderProject_Proposal.docx \
     docs/Hostel_FinderProject_Proposal.pdf

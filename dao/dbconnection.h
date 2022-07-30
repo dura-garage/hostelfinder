@@ -6,7 +6,6 @@
 class DbConnection{
 public:
     DbConnection(const QString & path);
-    bool addPerson(const QString& name);
 
    private:
     QSqlDatabase m_db;

@@ -1,9 +1,12 @@
 #include "hostelrepository.h"
 #include "models/hostel.h"
 #include "models/hostelowner.h"
+#include "dao/dbconnection.h"
+
 //constructor
 HostelRepository::HostelRepository(){
 //default cosntructor
+    DbConnection d("database/db.sqlite3");
 }
 
 
